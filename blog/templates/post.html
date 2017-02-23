@@ -1,6 +1,15 @@
 <html>
+	<head>
+		<title>{{ post.author }} - {{ post.title }}</title>
+	</head>
+	
 	<body>
-		<h1>{{ post.author }} - {{ post.title }}</h1>
+		<div style="background-color: #239630">
+			<h1>{{ post.author }} - {{ post.title }}</h1>
+			<div style="background-color: #90d498">
+				<h3>{{ post.created_date }}</h3>
+			</div>
+		</div>
 		<p> {{ post.text }}</p>
 	</body>
 </html>
